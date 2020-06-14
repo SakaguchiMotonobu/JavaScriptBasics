@@ -58,9 +58,10 @@
 
 // const double = (a) => a * 2;
 
-// console.log(double(8));
+// // console.log(double(8));
 
-{
-  const x = 100;
-  console.log(x);
-}
+// {
+//   const x = 100;
+//   console.log(x);
+// }
+
