@@ -1,22 +1,24 @@
 "use strict";
 
 {
-  const scores = [80, 90, 40];
-  // console.log(scores[1]);
+  const scores = [80, 90, 40, 70];
 
-  //   scores[2] = 44;
-  //   console.log(scores);
+  //   const [a, b, c, d] = scores;
+  //   console.log(a);
+  //   console.log(b);
+  //   console.log(c);
+  //   console.log(d);
 
-  //   console.log(scores.length);
+  //   const [a, b, ...c] = scores;
+  //   console.log(a);
+  //   console.log(b);
+  //   console.log(c);
 
-  //   scores.push(60, 50);
-  //   scores.shift();
-  //   scores.unshift(99, 100);
-  //   scores.pop();(
+  let x = 30;
+  let y = 70;
 
-  scores.splice(1, 1, 40, 50);
+  [x, y] = [y, x];
 
-  for (let i = 0; i < scores.length; i++) {
-    console.log(`Scores ${i}: ${scores[i]}`);
-  }
+  console.log(x);
+  console.log(y);
 }
