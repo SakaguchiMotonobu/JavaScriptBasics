@@ -1,9 +1,13 @@
 "use strict";
 
 {
-  const scores = [80, 90, 40, 70];
+  const point = {
+    x: 100,
+    y: 180,
+  };
 
-  scores.forEach((score, index) => {
-    console.log(`Score ${index}: ${score}`);
+  const keys = Object.keys(point);
+  keys.forEach((a) => {
+    console.log(`Key: ${a} Value: ${point[a]}`);
   });
 }
