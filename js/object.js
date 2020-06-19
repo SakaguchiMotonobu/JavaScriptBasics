@@ -1,15 +1,23 @@
 "use strict";
 
 {
-  let i = 0;
+  const posts = [
+    {
+      text: "JavaScriptの勉強中…",
+      likeCount: 0,
+      show() {
+        console.log(`${this.text} - ${this.likeCount}いいね`);
+      },
+    },
+    {
+      text: "プログラミング楽しい！",
+      likeCount: 0,
+      show() {
+        console.log(`${this.text} - ${this.likeCount}いいね`);
+      },
+    },
+  ];
 
-  function showTime() {
-    console.log(new Date());
-    const timeoutId = setTimeout(showTime, 1000);
-    i++;
-    if (i > 2) {
-      clearTimeout(timeoutId);
-    }
-  }
-  showTime();
+  posts[0].show();
+  posts[1].show();
 }
