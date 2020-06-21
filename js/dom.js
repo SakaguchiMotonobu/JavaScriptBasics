@@ -2,11 +2,16 @@
 
 {
   document.querySelector("button").addEventListener("click", () => {
-    const item0 = document.querySelectorAll("li")[0];
-    const copy = item0.cloneNode(true);
+    const colors = document.querySelectorAll("input");
+    let selectedColor;
 
-    const ul = document.querySelector("ul");
-    const item2 = document.querySelectorAll("li")[2];
-    ul.insertBefore(copy, item2);
+    colors.forEach((color) => {
+      if (color.checked === true) {
+        selectedColor = color.value;
+      }
+    });
+    const li = document.createElement("li");
+    li.textContent = selectedColor;
+    document.querySelector("ul").appendChild(li);
   });
 }
