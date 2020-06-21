@@ -2,6 +2,8 @@
 
 {
   document.querySelector("button").addEventListener("click", () => {
-    document.getElementById("target").textContent = "Changed!";
+    const targetNode = document.getElementById("target");
+
+    targetNode.className = "my-color my-border";
   });
 }
