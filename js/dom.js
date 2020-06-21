@@ -1,20 +1,9 @@
 "use strict";
 
 {
-  const text = document.querySelector("textarea");
-
-  //   text.addEventListener("focus", () => {
-  //     console.log("focus");
-  //   });
-  //   text.addEventListener("blur", () => {
-  //     console.log("blur");
-  //   });
-
-  text.addEventListener("input", () => {
-    // console.log("input");
-    console.log(text.value.length);
-  });
-  text.addEventListener("change", () => {
-    console.log("change");
+  document.querySelector("ul").addEventListener("click", (e) => {
+    if (e.target.nodeName === "LI") {
+      e.target.classList.toggle("done");
+    }
   });
 }
